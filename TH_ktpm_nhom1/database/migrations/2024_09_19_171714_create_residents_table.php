@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('apartment'); // Số căn hộ
             $table->string('phone');
             $table->string('email')->unique();
-            $table->string('contract_status'); // Trạng thái hợp đồng
+            $table->string('contract_status')->nullable()->default('active');// trạng thái hợp đồng
             $table->timestamps();
         });
     }
