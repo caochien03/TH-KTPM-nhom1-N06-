@@ -16,16 +16,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{ route('dashboard') }}">Dashboard</a>
+                        <a class="nav-link {{ request()->routeIs('dashboard') ? 'active' : '' }}" href="{{ route('dashboard') }}">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('residents.index') }}">Quản lý cư dân</a>
+                        <a class="nav-link {{ request()->routeIs('residents.*') ? 'active' : '' }}" href="{{ route('residents.index') }}">Quản lý cư dân</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('invoices.index') }}">Quản lý thu chi</a>
+                        <a class="nav-link {{ request()->routeIs('invoices.*') ? 'active' : '' }}" href="{{ route('invoices.index') }}">Quản lý thu chi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('feedback.index') }}">Quản lý phản ánh</a>
+                        <a class="nav-link {{ request()->routeIs('feedback.*') ? 'active' : '' }}" href="{{ route('feedback.index') }}">Quản lý phản ánh</a>
                     </li>
                 </ul>
             </div>

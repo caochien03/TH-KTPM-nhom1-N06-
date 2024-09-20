@@ -2,22 +2,21 @@
 
 @section('content')
     <h1>Danh sách cư dân</h1>
-    <a href="{{ route('residents.create') }}">Thêm mới cư dân</a>
-    
+
     @if (session('success'))
         <p>{{ session('success') }}</p>
     @endif
-
-    <table border="1">
+    <a href="{{ route('residents.create') }}">Thêm mới cư dân</a>
+    <table class="table">
         <thead>
-            <tr>
+        <tr>
                 <th>ID</th>
                 <th>Tên</th>
                 <th>Căn hộ</th>
                 <th>Điện thoại</th>
                 <th>Email</th>
                 <th>Thao tác</th>
-            </tr>
+        </tr>
         </thead>
         <tbody>
             @foreach($residents as $resident)
@@ -39,4 +38,7 @@
             @endforeach
         </tbody>
     </table>
+    
+    
+
 @endsection
