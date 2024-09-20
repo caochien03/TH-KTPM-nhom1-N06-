@@ -25,7 +25,7 @@
                         <a class="nav-link" href="{{ route('invoices.index') }}">Quản lý thu chi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quản lý phản ánh</a>
+                        <a class="nav-link" href="{{ route('feedback.index') }}">Quản lý phản ánh</a>
                     </li>
                 </ul>
             </div>
