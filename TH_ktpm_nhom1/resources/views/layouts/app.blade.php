@@ -19,7 +19,7 @@
                         <a class="nav-link active" href="{{ route('dashboard') }}">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('residents.index') }}">Quản lý cư dân</a>
+                        <a class="nav-link" href="#">Quản lý cư dân</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Quản lý thu chi</a>
