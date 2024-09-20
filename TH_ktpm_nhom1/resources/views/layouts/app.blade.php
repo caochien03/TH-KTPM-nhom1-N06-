@@ -22,7 +22,7 @@
                         <a class="nav-link" href="{{ route('residents.index') }}">Quản lý cư dân</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quản lý thu chi</a>
+                        <a class="nav-link" href="{{ route('invoices.index') }}">Quản lý thu chi</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Quản lý phản ánh</a>
